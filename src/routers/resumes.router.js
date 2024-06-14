@@ -3,7 +3,7 @@ import { HTTP_STATUS } from '../constants/http-status.constant.js';
 import { MESSAGES } from '../constants/message.constant.js';
 import { createResumeValidator } from '../middlewares/validators/create-resume-validator.middleware.js';
 import { prisma } from '../utils/prisma.util.js';
-import { updateResumeValidator } from '../middlewares/validators/updated-resume-validator.middleware.js';
+import { updateResumeValidator } from '../middlewares/validators/update-resume-validator.middleware.js';
 
 const resumesRouter = express.Router();
 
