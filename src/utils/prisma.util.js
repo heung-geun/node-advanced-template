@@ -1,5 +1,7 @@
+// @prisma/client 모듈에서 PrismaClient 기능을 불러온다.
 import { PrismaClient } from '@prisma/client';
 
+// prisma 상수에 새로운 PrismaClient를 생성해 준다.
 export const prisma = new PrismaClient({
   // Prisma를 이용해 데이터베이스를 접근할 때, SQL을 출력해줍니다.
   log: ['query', 'info', 'warn', 'error'],
@@ -8,6 +10,7 @@ export const prisma = new PrismaClient({
   errorFormat: 'pretty',
 }); // PrismaClient 인스턴스를 생성합니다.
 
+// 연결이 성공했는지 실패했는지 확인해준다. 
 try {
   await prisma.$connect();
   console.log('DB 연결에 성공했습니다.');

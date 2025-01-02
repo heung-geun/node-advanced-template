@@ -1,3 +1,4 @@
+// 상수의 key를 요청시 해당 값을 반환한다. 
 export const HTTP_STATUS = {
   OK: 200, // 호출에 성공했을 때
   CREATED: 201, // 생성에 성공했을 때

@@ -1,6 +1,10 @@
+// 현재 폴더 안에서 auth.constant.js 파일 안에 있는 MIN_PASSWORD_LENGTH 을 불러온다
 import { MIN_PASSWORD_LENGTH } from './auth.constant.js';
+
+// 현재 폴더 안에서 resume.constant.js 파일 안에 있는 MIN_RESUME_LENGTH 을 불러온다.
 import { MIN_RESUME_LENGTH } from './resume.constant.js';
 
+// 상수안의 객체를 선언하여 MESSAGES 의 key 값을 호출하여 원하는 메시지를 전달한다.
 export const MESSAGES = {
   AUTH: {
     COMMON: {

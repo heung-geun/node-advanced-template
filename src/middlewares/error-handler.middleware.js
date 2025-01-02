@@ -1,5 +1,8 @@
+// constants 폴더안에 http-status.constant.js 파일안에서 HTTP_STATUS 를 가져온다.
+// HTTP_STATUS 는 에러 상태들을 정의하는 객체이다
 import { HTTP_STATUS } from '../constants/http-status.constant.js';
 
+// 에러 메세지를 처리하는 함수를 내보내 준다.
 export const errorHandler = (err, req, res, next) => {
   console.error(err);
 
